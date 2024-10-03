@@ -50,6 +50,7 @@ final class TSQLUptade extends TSqlInstruction{
     if($this->criteria){
         $this->sql .= 'WHERE' . $this->criteria->dump();
     }
+    return $this->sql;
   }
 }
 ?>
